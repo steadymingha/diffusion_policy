@@ -1,0 +1,19 @@
+[project]
+name = "diffusion-policy"
+version = "0.0.0"
+requires-python = "==3.9.*"
+# demo_pusht.py 전용 최소 의존성 (텔레오퍼레이션 데이터 수집)
+# gym은 원본 0.21.0이 깨진 메타데이터로 uv 설치 불가 → 동일 구버전 API인 0.22.0 사용
+dependencies = [
+    "numpy==1.23.3",
+    "click==8.0.4",
+    "pygame==2.1.2",
+    "matplotlib==3.6.1",
+    "gym==0.22.0",
+    "pymunk==6.2.1",
+    "opencv-python==4.6.0.66",
+    "shapely==1.8.4",
+    "scikit-image==0.19.3",
+    "zarr==2.12.0",
+    "numcodecs==0.10.2",
+]
